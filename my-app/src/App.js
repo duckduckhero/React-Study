@@ -28,27 +28,27 @@ class App extends React.Component  {
         movies: [
           {
             title : "Your Name",
-            poster : "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fdgcuvl%2FbtqDOkOM8ti%2FJYmZXgz1T5K6i4Ch3gIQs1%2Fimg.jpg"
+            poster: "https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/108j/image/XVs44-ADN8SgrjZrgC9haVGk674.jpg"
           },
         
           {
             title : "Lord of the Rings",
-            poster:  "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fdgcuvl%2FbtqDOkOM8ti%2FJYmZXgz1T5K6i4Ch3gIQs1%2Fimg.jpg"
+            poster: "https://www.denofgeek.com/wp-content/uploads/2014/12/lord-of-the-rings-greatest-moments.jpg?fit=1920%2C1080"
           },
         
           {
             title : "Your Lie in april",
-            poster : "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fdgcuvl%2FbtqDOkOM8ti%2FJYmZXgz1T5K6i4Ch3gIQs1%2Fimg.jpg"
+            poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHEkrhWYjoTbuFwUjq5PjjHtEstTZ1PTPWc32UejwN8fo4xGV_&usqp=CAU"
           },
         
           {
             title : "Star Wars",
-            poster: "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fdgcuvl%2FbtqDOkOM8ti%2FJYmZXgz1T5K6i4Ch3gIQs1%2Fimg.jpg"
+            poster:  "https://i.ytimg.com/vi/sFvQOc4xS2k/maxresdefault.jpg"
           },
     
           {
             title: "Kingdom",
-            poster: "https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fk.kakaocdn.net%2Fdn%2Fdgcuvl%2FbtqDOkOM8ti%2FJYmZXgz1T5K6i4Ch3gIQs1%2Fimg.jpg"
+            poster: "https://menu.mt.co.kr/ize/thumb/2020/02/06/2020020618377210711_1.jpg?222?rnd=1152"
           }
         ]
       })
@@ -62,7 +62,7 @@ class App extends React.Component  {
     return movies
   }
 
-  render() {
+  render() { 
   return (
     <div className="App">
      {this.state.movies ? this._renderMovies() : 'Loading'}
