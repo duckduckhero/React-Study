@@ -23,36 +23,7 @@ class App extends React.Component  {
   }
 
   componentDidMount(){ //component가 render 성공적으로 되면 이게 실행됨 
-    setTimeout(() => {
-      this.setState({
-        movies: [
-          {
-            title : "Your Name",
-            poster: "https://t1.daumcdn.net/thumb/R720x0/?fname=http://t1.daumcdn.net/brunch/service/user/108j/image/XVs44-ADN8SgrjZrgC9haVGk674.jpg"
-          },
-        
-          {
-            title : "Lord of the Rings",
-            poster: "https://www.denofgeek.com/wp-content/uploads/2014/12/lord-of-the-rings-greatest-moments.jpg?fit=1920%2C1080"
-          },
-        
-          {
-            title : "Your Lie in april",
-            poster: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTHEkrhWYjoTbuFwUjq5PjjHtEstTZ1PTPWc32UejwN8fo4xGV_&usqp=CAU"
-          },
-        
-          {
-            title : "Star Wars",
-            poster:  "https://i.ytimg.com/vi/sFvQOc4xS2k/maxresdefault.jpg"
-          },
-    
-          {
-            title: "Kingdom",
-            poster: "https://menu.mt.co.kr/ize/thumb/2020/02/06/2020020618377210711_1.jpg?222?rnd=1152"
-          }
-        ]
-      })
-    }, 5000)
+    fetch("https://yts.mx/api/v2/list_movies.json?quality=3D?sort_by=rating")
   }
 
   _renderMovies = () => {
