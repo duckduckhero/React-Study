@@ -24,6 +24,9 @@ class App extends React.Component  {
 
   componentDidMount(){ //component가 render 성공적으로 되면 이게 실행됨 
     fetch("https://yts.mx/api/v2/list_movies.json?quality=3D?sort_by=rating")
+    .then(response => response.json()) //위의 라인이 완료가 되면 여기에 적힌걸 수행해라 
+    .then(json=> console.log(json))
+    .catch(err => console.log(err)) //만약 맨 위의 것이 에러가 생긴다면 에러를 출력해라. 
   }
 
   _renderMovies = () => {
